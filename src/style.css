@@ -9,6 +9,9 @@ body {
     line-height: 28px;
     margin-bottom: 0;
   }
+  h1::first-letter {
+    text-transform: capitalize;
+  }
   
   ul {
     margin: 0;
