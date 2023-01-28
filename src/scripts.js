@@ -84,6 +84,8 @@ function getForecast(coordinate){
     iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${icon}@2x.png`);
     humidityElement.innerHTML=response.data.main.humidity;
     windElement.innerHTML=response.data.wind.speed;
+    celsiusLink.setAttribute("class","active");
+    fahrenheitLink.removeAttribute("class","active");
     getForecast(response.data.coord);
     //console.log(response.data);
 
